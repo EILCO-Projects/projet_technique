@@ -1,118 +1,116 @@
-[
-    {
-        "type": "Supervised Learning",
-        "models": [
-            {
-                "model": "Decision Tree",
-                "algorithms": [
-                    {
-                        "algorithm": "ID3",
-                        "problems": [
-                            {
-                                "problem": "Classification",
-                                "inputs": "Dataset with labeled features and target classes",
-                                "output": "Decision tree model",
-                                "descriptive_words": [
-                                    "Categorical variables",
-                                    "Discrete variables"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "algorithm": "C4.5",
-                        "problems": [
-                            {
-                                "problem": "Classification",
-                                "inputs": "Dataset with labeled features and target classes",
-                                "output": "Decision tree model",
-                                "descriptive_words": [
-                                    "Categorical variables",
-                                    "Discrete variables"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "algorithm": "CART",
-                        "problems": [
-                            {
-                                "problem": "Classification",
-                                "inputs": "Dataset with labeled features and target classes",
-                                "output": "Decision tree model",
-                                "descriptive_words": [
-                                    "Continuous variables",
-                                    "Categorical variables"
-                                ]
-                            },
-                            {
-                                "problem": "Regression",
-                                "inputs": "Dataset with labeled features and target values",
-                                "output": "Decision tree model",
-                                "descriptive_words": [
-                                    "Continuous variables"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "model": "Neural Networks",
-                "algorithms": [
-                    {
-                        "algorithm": "Multi-Layer Perceptron (MLP)",
-                        "problems": [
-                            {
-                                "problem": "Classification",
-                                "inputs": "Dataset with labeled features and target classes",
-                                "output": "Neural network model",
-                                "descriptive_words": [
-                                    "Non-linear relationships",
-                                    "High-dimensional data"
-                                ]
-                            },
-                            {
-                                "problem": "Regression",
-                                "inputs": "Dataset with labeled features and target values",
-                                "output": "Neural network model",
-                                "descriptive_words": [
-                                    "Non-linear relationships",
-                                    "Continuous variables"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "algorithm": "Convolutional Neural Network (CNN)",
-                        "problems": [
-                            {
-                                "problem": "Image Classification",
-                                "inputs": "Image dataset with labeled classes",
-                                "output": "CNN model",
-                                "descriptive_words": [
-                                    "Spatial relationships",
-                                    "Feature detection"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "algorithm": "Recurrent Neural Network (RNN)",
-                        "problems": [
-                            {
-                                "problem": "Time Series Prediction",
-                                "inputs": "Time series dataset",
-                                "output": "RNN model",
-                                "descriptive_words": [
-                                    "Temporal relationships",
-                                    "Sequential data"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
-]
+{
+    "type": "Supervised Learning",
+    "models": [
+        {
+            "model": "Decision Tree",
+            "algorithms": [
+                {
+                    "algorithm": "ID3",
+                    "problems": [
+                        {
+                            "problem": "Classification",
+                            "inputs": "Dataset with labeled features and target classes",
+                            "output": "Decision tree model",
+                            "descriptive_words": [
+                                "Categorical variables",
+                                "Discrete variables"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "algorithm": "C4.5",
+                    "problems": [
+                        {
+                            "problem": "Classification",
+                            "inputs": "Dataset with labeled features and target classes",
+                            "output": "Decision tree model",
+                            "descriptive_words": [
+                                "Categorical variables",
+                                "Discrete variables"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "algorithm": "CART",
+                    "problems": [
+                        {
+                            "problem": "Classification",
+                            "inputs": "Dataset with labeled features and target classes",
+                            "output": "Decision tree model",
+                            "descriptive_words": [
+                                "Continuous variables",
+                                "Categorical variables"
+                            ]
+                        },
+                        {
+                            "problem": "Regression",
+                            "inputs": "Dataset with labeled features and target values",
+                            "output": "Decision tree model",
+                            "descriptive_words": [
+                                "Continuous variables"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "model": "Neural Networks",
+            "algorithms": [
+                {
+                    "algorithm": "Multi-Layer Perceptron (MLP)",
+                    "problems": [
+                        {
+                            "problem": "Classification",
+                            "inputs": "Dataset with labeled features and target classes",
+                            "output": "Neural network model",
+                            "descriptive_words": [
+                                "Non-linear relationships",
+                                "High-dimensional data"
+                            ]
+                        },
+                        {
+                            "problem": "Regression",
+                            "inputs": "Dataset with labeled features and target values",
+                            "output": "Neural network model",
+                            "descriptive_words": [
+                                "Non-linear relationships",
+                                "Continuous variables"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "algorithm": "Convolutional Neural Network (CNN)",
+                    "problems": [
+                        {
+                            "problem": "Image Classification",
+                            "inputs": "Image dataset with labeled classes",
+                            "output": "CNN model",
+                            "descriptive_words": [
+                                "Spatial relationships",
+                                "Feature detection"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "algorithm": "Recurrent Neural Network (RNN)",
+                    "problems": [
+                        {
+                            "problem": "Time Series Prediction",
+                            "inputs": "Time series dataset",
+                            "output": "RNN model",
+                            "descriptive_words": [
+                                "Temporal relationships",
+                                "Sequential data"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

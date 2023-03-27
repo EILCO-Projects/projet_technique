@@ -1,3 +1,4 @@
+
 from neo4j import GraphDatabase
 import json
 
@@ -8,7 +9,7 @@ password = "Avenger158"
 driver = GraphDatabase.driver(uri, auth=(username, password))
 
 # Lecture du fichier JSON
-with open('../data/problemes_concrets.json') as f:
+with open('../data/rl_irl_prb.json') as f:
     fl = json.load(f)
 
 # Écriture des données dans la base de données Neo4j

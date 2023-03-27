@@ -1,0 +1,131 @@
+{
+    "Value-Based Reinforcement Learning": [
+        {
+            "Nom": "Q-Learning",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.1,
+                "Facteur de réduction": 0.99,
+                "Epsilon": 0.1
+            }
+        },
+        {
+            "Nom": "SARSA",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.1,
+                "Facteur de réduction": 0.99,
+                "Epsilon": 0.1
+            }
+        },
+        {
+            "Nom": "DQN",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.00025,
+                "Facteur de réduction": 0.99,
+                "Epsilon": 0.1,
+                "Taille du lot": 32
+            }
+        },
+        {
+            "Nom": "Double Q-Learning",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.001,
+                "Facteur de réduction": 0.99,
+                "Epsilon": 0.1
+            }
+        },
+        {
+            "Nom": "Prioritized Experience Replay",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.00025,
+                "Facteur de réduction": 0.99,
+                "Epsilon": 0.1,
+                "Taille du lot": 32,
+                "Alpha": 0.6,
+                "Beta": 0.4
+            }
+        }
+    ],
+    "Policy-Based Reinforcement Learning": [
+        {
+            "Nom": "Policy Gradients",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.01,
+                "Facteur de réduction": 0.99,
+                "Taille du lot": 32
+            }
+        },
+        {
+            "Nom": "TRPO",
+            "Hyperparametres": {
+                "Pas de recherche de ligne": 0.1,
+                "Facteur de régularisation": 0.1
+            }
+        },
+        {
+            "Nom": "PPO",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.0003,
+                "Facteur de réduction": 0.99,
+                "Clip": 0.2,
+                "Épisodes par mise à jour": 4
+            }
+        },
+        {
+            "Nom": "DDPG",
+            "Hyperparametres": {
+                "Taux d'apprentissage de l'acteur": 0.0001,
+                "Taux d'apprentissage du critique": 0.001,
+                "Facteur de réduction": 0.99,
+                "Taille du lot": 64
+            }
+        },
+        {
+            "Nom": "SAC",
+            "Hyperparametres": {
+                "Taux d'apprentissage de l'acteur": 0.0003,
+                "Taux d'apprentissage du critique": 0.0003,
+                "Facteur de réduction": 0.99,
+                "Entropie cible": -2.0,
+                "Alpha": 0.2,
+                "Taille du lot": 256
+            }
+        },
+        {
+            "Nom": "A2C",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.0007,
+                "Facteur de réduction": 0.99,
+                "Taille du lot": 32,
+                "Entropie": 0.01
+            }
+        },
+        {
+            "Nom": "A3C",
+            "Hyperparametres": {
+                "Taux d'apprentissage": 0.0007,
+                "Facteur de réduction": 0.99,
+                "Taille du lot": 32,
+                "Entropie": 0.01,
+                "Nombre d'agents": 16
+            }
+        },
+        {
+            "Nom": "ACKTR",
+            "Hyperparametres": {
+                "Pas de recherche de ligne": 0.1,
+                "Facteur de régularisation": 0.001,
+                "Facteur de réduction": 0.99,
+                "Taille du lot": 32
+            }
+        },
+        {
+            "Nom": "PAC",
+            "Hyperparametres": {
+                "Taux d'apprentissage de l'acteur": 0.0003,
+                "Taux d'apprentissage du critique": 0.001,
+                "Facteur de réduction": 0.99,
+                "Entropie": 0.01
+            }
+        }
+    ]
+}

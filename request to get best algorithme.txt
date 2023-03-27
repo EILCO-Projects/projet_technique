@@ -1,0 +1,5 @@
+MATCH (n:Probleme)
+WHERE n.name IN ['mot1', 'mot2', 'mot3', ...]
+WITH n, apoc.text.sorensenDiceSimilarity(n.name, 'mot1 mot2 mot3') AS sim
+RETURN n.name, sim
+ORDER BY sim DESC

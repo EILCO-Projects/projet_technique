@@ -1,0 +1,324 @@
+{
+    "Modeles d'apprentissage non supervisé": [
+        {
+            "Modele": "Clustering",
+            "Algorithmes": [
+                {
+                    "Algorithme": "Clustering hiérarchique",
+                    "Hyperparametres": {
+                        "linkage": [
+                            "ward",
+                            "complete",
+                            "average",
+                            "single"
+                        ],
+                        "affinity": [
+                            "euclidean",
+                            "l1",
+                            "l2",
+                            "manhattan",
+                            "cosine",
+                            "precomputed"
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "K-Means",
+                    "Hyperparametres": {
+                        "n_clusters": [
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "init": [
+                            "k-means++",
+                            "random"
+                        ],
+                        "max_iter": [
+                            300,
+                            400,
+                            500
+                        ],
+                        "tol": [
+                            1e-4,
+                            1e-5,
+                            1e-6
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "DBSCAN",
+                    "Hyperparametres": {
+                        "eps": [
+                            0.5,
+                            1,
+                            2
+                        ],
+                        "min_samples": [
+                            5,
+                            10,
+                            15
+                        ],
+                        "metric": [
+                            "euclidean",
+                            "manhattan",
+                            "cosine"
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "Mean Shift",
+                    "Hyperparametres": {
+                        "bandwidth": [
+                            0.5,
+                            1,
+                            2
+                        ],
+                        "bin_seeding": [
+                            "True",
+                            "False"
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "Birch",
+                    "Hyperparametres": {
+                        "threshold": [
+                            0.5,
+                            1,
+                            2
+                        ],
+                        "branching_factor": [
+                            10,
+                            20,
+                            30
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "AgglomerativeClustering",
+                    "Hyperparametres": {
+                        "n_clusters": [
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "linkage": [
+                            "ward",
+                            "complete",
+                            "average",
+                            "single"
+                        ],
+                        "affinity": [
+                            "euclidean",
+                            "l1",
+                            "l2",
+                            "manhattan",
+                            "cosine",
+                            "precomputed"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Modele": "Réduction de la densité des données",
+            "Algorithmes": [
+                {
+                    "Algorithme": "t-SNE",
+                    "Hyperparametres": {
+                        "n_components": [
+                            2,
+                            3
+                        ],
+                        "perplexity": [
+                            5,
+                            10,
+                            20,
+                            30
+                        ],
+                        "learning_rate": [
+                            10,
+                            50,
+                            100,
+                            200
+                        ],
+                        "early_exaggeration": [
+                            10,
+                            20,
+                            30,
+                            40
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "LLE",
+                    "Hyperparametres": {
+                        "n_neighbors": [
+                            5,
+                            10,
+                            15,
+                            20
+                        ],
+                        "tol": [
+                            1e-4,
+                            1e-5,
+                            1e-6
+                        ],
+                        "method": [
+                            "standard",
+                            "ltsa",
+                            "hessian"
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "Isomap",
+                    "Hyperparametres": {
+                        "n_components": [
+                            2,
+                            3
+                        ],
+                        "n_neighbors": [
+                            5,
+                            10,
+                            15,
+                            20
+                        ],
+                        "eigen_solver": [
+                            "auto",
+                            "arpack",
+                            "dense"
+                        ],
+                        "tol": [
+                            1e-4,
+                            1e-5,
+                            1e-6
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "UMAP",
+                    "Hyperparametres": {
+                        "n_neighbors": [
+                            5,
+                            10,
+                            15,
+                            20
+                        ],
+                        "n_components": [
+                            2,
+                            3
+                        ],
+                        "metric": [
+                            "euclidean",
+                            "manhattan",
+                            "cosine"
+                        ],
+                        "min_dist": [
+                            0.1,
+                            0.2,
+                            0.3
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Modele": "Détection d'anomalies",
+            "Algorithmes": [
+                {
+                    "Algorithme": "Local Outlier Factor",
+                    "Hyperparametres": {
+                        "n_neighbors": [
+                            5,
+                            10,
+                            15,
+                            20
+                        ],
+                        "contamination": [
+                            "auto",
+                            0.1,
+                            0.2,
+                            0.3
+                        ],
+                        "metric": [
+                            "euclidean",
+                            "manhattan",
+                            "cosine"
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "Isolation Forest",
+                    "Hyperparametres": {
+                        "n_estimators": [
+                            50,
+                            100,
+                            150
+                        ],
+                        "max_samples": [
+                            "auto",
+                            0.1,
+                            0.2,
+                            0.3
+                        ],
+                        "contamination": [
+                            "auto",
+                            0.1,
+                            0.2,
+                            0.3
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Modele": "Association de regles",
+            "Algorithmes": [
+                {
+                    "Algorithme": "Apriori",
+                    "Hyperparametres": {
+                        "min_support": [
+                            0.1,
+                            0.2,
+                            0.3
+                        ],
+                        "min_confidence": [
+                            0.5,
+                            0.6,
+                            0.7
+                        ],
+                        "max_len": [
+                            2,
+                            3,
+                            4
+                        ]
+                    }
+                },
+                {
+                    "Algorithme": "FP-Growth",
+                    "Hyperparametres": {
+                        "min_support": [
+                            0.1,
+                            0.2,
+                            0.3
+                        ],
+                        "min_confidence": [
+                            0.5,
+                            0.6,
+                            0.7
+                        ],
+                        "max_len": [
+                            2,
+                            3,
+                            4
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

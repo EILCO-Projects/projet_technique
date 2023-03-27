@@ -1,0 +1,875 @@
+{
+  "data": [
+    {
+      "model_name": "k-means",
+      "problem_name": "Segmentation des clients",
+      "problem_description": "Segmentation des clients d'un magasin de détail en fonction de leurs habitudes d'achat.",
+      "hyperparameters": {
+        "n_clusters": 5,
+        "init": "random",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 1e-4,
+        "algorithm": "auto"
+      },
+      "data": {
+        "clients": [
+          {
+            "id": 1,
+            "age": 25,
+            "sexe": "M",
+            "revenu": 35000,
+            "montant_achat": 150,
+            "frequence_achat": 2,
+            "produits_achetes": [
+              "Vêtements",
+              "Accessoires"
+            ]
+          },
+          {
+            "id": 2,
+            "age": 40,
+            "sexe": "F",
+            "revenu": 75000,
+            "montant_achat": 300,
+            "frequence_achat": 4,
+            "produits_achetes": [
+              "Electronique",
+              "Maison"
+            ]
+          },
+          {
+            "id": 3,
+            "age": 35,
+            "sexe": "M",
+            "revenu": 50000,
+            "montant_achat": 200,
+            "frequence_achat": 3,
+            "produits_achetes": [
+              "Vêtements",
+              "Accessoires"
+            ]
+          },
+          {
+            "id": 4,
+            "age": 45,
+            "sexe": "F",
+            "revenu": 90000,
+            "montant_achat": 500,
+            "frequence_achat": 6,
+            "produits_achetes": [
+              "Electronique",
+              "Maison",
+              "Beauté"
+            ]
+          },
+          {
+            "id": 5,
+            "age": 30,
+            "sexe": "M",
+            "revenu": 40000,
+            "montant_achat": 100,
+            "frequence_achat": 1,
+            "produits_achetes": [
+              "Vêtements",
+              "Accessoires",
+              "Sport"
+            ]
+          }
+        ],
+        "clusters": [
+          {
+            "cluster_id": 1,
+            "centres": [
+              35,
+              55000,
+              225,
+              3
+            ],
+            "clients": [
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "centres": [
+              42.5,
+              82500,
+              400,
+              5
+            ],
+            "clients": [
+              2,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model_name": "PCA",
+      "problem_name": "Réduction de dimension",
+      "problem_description": "Réduction de la dimensionnalité d'un ensemble de données pour une analyse plus efficace.",
+      "hyperparameters": {
+        "n_components": 2,
+        "copy": true,
+        "whiten": false,
+        "svd_solver": "auto",
+        "tol": 1e-4,
+        "iterated_power": "auto",
+        "random_state": null
+      },
+      "data": {
+        "original_data": [
+          {
+            "feature_1": 1,
+            "feature_2": 2,
+            "feature_3": 3
+          },
+          {
+            "feature_1": 4,
+            "feature_2": 5,
+            "feature_3": 6
+          },
+          {
+            "feature_1": 7,
+            "feature_2": 8,
+            "feature_3": 9
+          },
+          {
+            "feature_1": 10,
+            "feature_2": 11,
+            "feature_3": 12
+          },
+          {
+            "feature_1": 13,
+            "feature_2": 14,
+            "feature_3": 15
+          }
+        ],
+        "transformed_data": [
+          {
+            "principal_component_1": -7.745966692414834,
+            "principal_component_2": 0
+          },
+          {
+            "principal_component_1": -2.581988897471622,
+            "principal_component_2": 0
+          },
+          {
+            "principal_component_1": 2.5819888974716144,
+            "principal_component_2": 0
+          },
+          {
+            "principal_component_1": 7.745966692414825,
+            "principal_component_2": 0
+          },
+          {
+            "principal_component_1": 15.581977794943249,
+            "principal_component_2": 0
+          }
+        ]
+      }
+    },
+    {
+      "model_name": "DBSCAN",
+      "problem_name": "Clustering",
+      "problem_description": "Clustering d'un ensemble de données pour identifier des groupes similaires.",
+      "hyperparameters": {
+        "eps": 0.5,
+        "min_samples": 5,
+        "metric": "euclidean",
+        "metric_params": null,
+        "algorithm": "auto",
+        "leaf_size": 30,
+        "p": null,
+        "n_jobs": null
+      },
+      "data": {
+        "original_data": [
+          {
+            "feature_1": 1,
+            "feature_2": 2
+          },
+          {
+            "feature_1": 1.5,
+            "feature_2": 1.8
+          },
+          {
+            "feature_1": 5,
+            "feature_2": 8
+          },
+          {
+            "feature_1": 8,
+            "feature_2": 8
+          },
+          {
+            "feature_1": 1,
+            "feature_2": 0.6
+          },
+          {
+            "feature_1": 9,
+            "feature_2": 11
+          }
+        ],
+        "cluster_labels": [
+          0,
+          0,
+          1,
+          1,
+          -1,
+          2
+        ]
+      }
+    },
+    {
+      "model_name": "t-SNE",
+      "problem_name": "Visualisation de données",
+      "problem_description": "Visualisation d'un ensemble de données en deux dimensions.",
+      "hyperparameters": {
+        "n_components": 2,
+        "perplexity": 30,
+        "early_exaggeration": 12,
+        "learning_rate": 200,
+        "n_iter": 1000,
+        "n_iter_without_progress": 300,
+        "min_grad_norm": 1e-7,
+        "metric": "euclidean",
+        "init": "random",
+        "verbose": 0,
+        "random_state": null,
+        "method": "barnes_hut",
+        "angle": 0.5,
+        "n_jobs": null
+      },
+      "data": {
+        "original_data": [
+          {
+            "feature_1": 1,
+            "feature_2": 2,
+            "feature_3": 3
+          },
+          {
+            "feature_1": 1.5,
+            "feature_2": 1.8,
+            "feature_3": 2.9
+          },
+          {
+            "feature_1": 5,
+            "feature_2": 8,
+            "feature_3": 7.6
+          },
+          {
+            "feature_1": 8,
+            "feature_2": 8,
+            "feature_3": 9
+          },
+          {
+            "feature_1": 1,
+            "feature_2": 0.6,
+            "feature_3": 1.3
+          },
+          {
+            "feature_1": 9,
+            "feature_2": 11,
+            "feature_3": 10.2
+          }
+        ],
+        "transformed_data": [
+          {
+            "x": -3.75,
+            "y": 4.24
+          },
+          {
+            "x": -4.44,
+            "y": 3.86
+          },
+          {
+            "x": 1.53,
+            "y": -2.07
+          },
+          {
+            "x": 3.45,
+            "y": -0.16
+          },
+          {
+            "x": -2.96,
+            "y": 5.69
+          },
+          {
+            "x": 5.17,
+            "y": -0.19
+          }
+        ]
+      }
+    },
+    {
+      "model_name": "Hierarchical Clustering",
+      "problem_name": "Segmentation de clients",
+      "problem_description": "Segmentation de clients en fonction de leurs comportements d'achat.",
+      "hyperparameters": {
+        "n_clusters": 5,
+        "affinity": "euclidean",
+        "linkage": "ward",
+        "distance_threshold": null
+      },
+      "data": {
+        "original_data": [
+          {
+            "id": 1,
+            "age": 35,
+            "income": 50000,
+            "spending_score": 70
+          },
+          {
+            "id": 2,
+            "age": 45,
+            "income": 60000,
+            "spending_score": 60
+          },
+          {
+            "id": 3,
+            "age": 30,
+            "income": 70000,
+            "spending_score": 80
+          },
+          {
+            "id": 4,
+            "age": 25,
+            "income": 40000,
+            "spending_score": 90
+          },
+          {
+            "id": 5,
+            "age": 35,
+            "income": 80000,
+            "spending_score": 50
+          },
+          {
+            "id": 6,
+            "age": 50,
+            "income": 50000,
+            "spending_score": 80
+          }
+        ],
+        "cluster_labels": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "model_name": "K-Nearest Neighbors",
+      "problem_name": "Classification de types d'iris",
+      "problem_description": "Classification de types d'iris en fonction de leurs caractéristiques.",
+      "hyperparameters": {
+        "n_neighbors": 3,
+        "weights": "uniform",
+        "algorithm": "auto",
+        "metric": "euclidean"
+      },
+      "data": {
+        "original_data": [
+          {
+            "sepal_length": 5.1,
+            "sepal_width": 3.5,
+            "petal_length": 1.4,
+            "petal_width": 0.2,
+            "type": "setosa"
+          },
+          {
+            "sepal_length": 4.9,
+            "sepal_width": 3.0,
+            "petal_length": 1.4,
+            "petal_width": 0.2,
+            "type": "setosa"
+          },
+          {
+            "sepal_length": 6.7,
+            "sepal_width": 3.1,
+            "petal_length": 4.4,
+            "petal_width": 1.4,
+            "type": "versicolor"
+          },
+          {
+            "sepal_length": 5.6,
+            "sepal_width": 2.9,
+            "petal_length": 3.6,
+            "petal_width": 1.3,
+            "type": "versicolor"
+          },
+          {
+            "sepal_length": 6.0,
+            "sepal_width": 3.0,
+            "petal_length": 4.8,
+            "petal_width": 1.8,
+            "type": "virginica"
+          },
+          {
+            "sepal_length": 6.7,
+            "sepal_width": 3.1,
+            "petal_length": 5.6,
+            "petal_width": 2.4,
+            "type": "virginica"
+          }
+        ],
+        "predicted_labels": [
+          "setosa",
+          "setosa",
+          "versicolor",
+          "versicolor",
+          "virginica",
+          "virginica"
+        ]
+      }
+    },
+    {
+      "model_name": "Réseaux de neurones",
+      "problem_name": "Prédiction de notes de films",
+      "problem_description": "Prédiction des notes de films à partir de données d'entrée.",
+      "hyperparameters": {
+        "hidden_layer_sizes": [
+          100,
+          50
+        ],
+        "activation": "relu",
+        "solver": "adam",
+        "alpha": 0.0001,
+        "max_iter": 200
+      },
+      "data": {
+        "original_data": [
+          {
+            "runtime": 100,
+            "genre": "Action",
+            "director": "Michael Bay",
+            "actor": "Tom Cruise",
+            "rating": 8.0
+          },
+          {
+            "runtime": 120,
+            "genre": "Drama",
+            "director": "Steven Spielberg",
+            "actor": "Meryl Streep",
+            "rating": 7.5
+          },
+          {
+            "runtime": 90,
+            "genre": "Comedy",
+            "director": "Seth Rogen",
+            "actor": "Seth Rogen",
+            "rating": 6.5
+          },
+          {
+            "runtime": 140,
+            "genre": "Romance",
+            "director": "Nancy Meyers",
+            "actor": "Diane Keaton",
+            "rating": 7.8
+          },
+          {
+            "runtime": 95,
+            "genre": "Horror",
+            "director": "Jordan Peele",
+            "actor": "Lupita Nyong'o",
+            "rating": 8.2
+          },
+          {
+            "runtime": 110,
+            "genre": "Science Fiction",
+            "director": "Christopher Nolan",
+            "actor": "Leonardo DiCaprio",
+            "rating": 9.0
+          }
+        ],
+        "predicted_ratings": [
+          7.8,
+          7.5,
+          6.9,
+          7.6,
+          8.1,
+          8.8
+        ]
+      }
+    },
+    {
+      "model_name": "Forêts aléatoires",
+      "problem_name": "Prédiction de salaires",
+      "problem_description": "Prédiction des salaires en fonction de l'expérience, de l'âge et du niveau d'études.",
+      "hyperparameters": {
+        "n_estimators": 100,
+        "criterion": "mse",
+        "max_features": "sqrt",
+        "max_depth": 10,
+        "min_samples_split": 2
+      },
+      "data": {
+        "original_data": [
+          {
+            "experience": 3,
+            "age": 25,
+            "education": "Master's degree",
+            "salary": 50000
+          },
+          {
+            "experience": 5,
+            "age": 30,
+            "education": "Bachelor's degree",
+            "salary": 60000
+          },
+          {
+            "experience": 10,
+            "age": 40,
+            "education": "Doctorate degree",
+            "salary": 90000
+          },
+          {
+            "experience": 2,
+            "age": 22,
+            "education": "Associate's degree",
+            "salary": 40000
+          },
+          {
+            "experience": 7,
+            "age": 35,
+            "education": "Bachelor's degree",
+            "salary": 75000
+          },
+          {
+            "experience": 15,
+            "age": 50,
+            "education": "Doctorate degree",
+            "salary": 120000
+          }
+        ],
+        "predicted_salaries": [
+          52000,
+          65000,
+          95000,
+          42000,
+          78000,
+          115000
+        ]
+      }
+    },
+    {
+      "model_name": "Arbres de décision",
+      "problem_name": "Prédiction de la qualité du vin",
+      "problem_description": "Prédiction de la qualité du vin à partir de caractéristiques physico-chimiques.",
+      "hyperparameters": {
+        "criterion": "gini",
+        "splitter": "best",
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1
+      },
+      "data": {
+        "original_data": [
+          {
+            "fixed acidity": 7.2,
+            "volatile acidity": 0.26,
+            "citric acid": 0.27,
+            "residual sugar": 2.3,
+            "chlorides": 0.016,
+            "free sulfur dioxide": 29,
+            "total sulfur dioxide": 55,
+            "density": 0.991,
+            "pH": 3.23,
+            "sulphates": 0.73,
+            "alcohol": 11.4,
+            "quality": 7
+          },
+          {
+            "fixed acidity": 7.9,
+            "volatile acidity": 0.16,
+            "citric acid": 0.3,
+            "residual sugar": 1.6,
+            "chlorides": 0.027,
+            "free sulfur dioxide": 39,
+            "total sulfur dioxide": 54,
+            "density": 0.993,
+            "pH": 3.28,
+            "sulphates": 0.82,
+            "alcohol": 9.8,
+            "quality": 6
+          },
+          {
+            "fixed acidity": 6.4,
+            "volatile acidity": 0.58,
+            "citric acid": 0.09,
+            "residual sugar": 3.9,
+            "chlorides": 0.06,
+            "free sulfur dioxide": 14,
+            "total sulfur dioxide": 31,
+            "density": 0.995,
+            "pH": 3.38,
+            "sulphates": 0.66,
+            "alcohol": 10.8,
+            "quality": 5
+          },
+          {
+            "fixed acidity": 7.8,
+            "volatile acidity": 0.17,
+            "citric acid": 0.26,
+            "residual sugar": 1.6,
+            "chlorides": 0.026,
+            "free sulfur dioxide": 37,
+            "total sulfur dioxide": 99,
+            "density": 0.993,
+            "pH": 3.24,
+            "sulphates": 0.53,
+            "alcohol": 10.4,
+            "quality": 6
+          },
+          {
+            "fixed acidity": 6.8,
+            "volatile acidity": 0.62,
+            "citric acid": 0.08,
+            "residual sugar": 1.9,
+            "chlorides": 0.068,
+            "free sulfur dioxide": 28,
+            "total sulfur dioxide": 38,
+            "density": 0.996,
+            "pH": 3.41,
+            "sulphates": 0.52,
+            "alcohol": 9.9,
+            "quality": 5
+          },
+          {
+            "fixed acidity": 6.2,
+            "volatile acidity": 0.31,
+            "citric acid": 0.25,
+            "residual sugar": 7.7,
+            "chlorides": 0.045,
+            "free sulfur dioxide": 58,
+            "total sulfur dioxide": 140,
+            "density": 0.995,
+            "pH": 3.23,
+            "sulphates": 0.58,
+            "alcohol": 12.6,
+            "quality": 7
+          },
+          {
+            "fixed acidity": 7.1,
+            "volatile acidity": 0.33,
+            "citric acid": 0.28,
+            "residual sugar": 1.5,
+            "chlorides": 0.036,
+            "free sulfur dioxide": 50,
+            "total sulfur dioxide": 121,
+            "density": 0.9906,
+            "pH": 3.37,
+            "sulphates": 0.94,
+            "alcohol": 12.5,
+            "quality": 7
+          },
+          {
+            "fixed acidity": 7.2,
+            "volatile acidity": 0.21,
+            "citric acid": 0.32,
+            "residual sugar": 1.8,
+            "chlorides": 0.044,
+            "free sulfur dioxide": 35,
+            "total sulfur dioxide": 80,
+            "density": 0.993,
+            "pH": 3.19,
+            "sulphates": 0.71,
+            "alcohol": 11.2,
+            "quality": 6
+          },
+          {
+            "fixed acidity": 7.7,
+            "volatile acidity": 0.64,
+            "citric acid": 0.21,
+            "residual sugar": 2.2,
+            "chlorides": 0.077,
+            "free sulfur dioxide": 38,
+            "total sulfur dioxide": 142,
+            "density": 0.9951,
+            "pH": 3.35,
+            "sulphates": 0.55,
+            "alcohol": 9.9,
+            "quality": 5
+          },
+          {
+            "fixed acidity": 6.5,
+            "volatile acidity": 0.22,
+            "citric acid": 0.34,
+            "residual sugar": 1.5,
+            "chlorides": 0.029,
+            "free sulfur dioxide": 28,
+            "total sulfur dioxide": 93,
+            "density": 0.9905,
+            "pH": 3.34,
+            "sulphates": 0.48,
+            "alcohol": 12.1,
+            "quality": 6
+          },
+          {
+            "fixed acidity": 6.7,
+            "volatile acidity": 0.28,
+            "citric acid": 0.08,
+            "residual sugar": 2.4,
+            "chlorides": 0.048,
+            "free sulfur dioxide": 38,
+            "total sulfur dioxide": 83,
+            "density": 0.9946,
+            "pH": 3.45,
+            "sulphates": 0.56,
+            "alcohol": 11.0,
+            "quality": 6
+          },
+          {
+            "fixed acidity": 6.8,
+            "volatile acidity": 0.39,
+            "citric acid": 0.1,
+            "residual sugar": 2.3,
+            "chlorides": 0.075,
+            "free sulfur dioxide": 23,
+            "total sulfur dioxide": 55,
+            "density": 0.9952,
+            "pH": 3.34,
+            "sulphates": 0.59,
+            "alcohol": 10.7,
+            "quality": 5
+          }
+        ]
+      }
+    },
+    {
+      "model_name": "Régression logistique",
+      "problem_name": "Détection de fraude",
+      "problem_description": "Détection de transactions frauduleuses à partir des informations de la transaction telles que le montant, le lieu, le type de carte de crédit, etc.",
+      "hyperparameters": {
+        "penalty": "l2",
+        "C": 1.0,
+        "solver": "lbfgs"
+      },
+      "data": {
+        "original_data": [
+          {
+            "transaction_id": 1,
+            "amount": 100.0,
+            "location": "USA",
+            "card_type": "Visa",
+            "is_fraud": 0
+          },
+          {
+            "transaction_id": 2,
+            "amount": 200.0,
+            "location": "USA",
+            "card_type": "Mastercard",
+            "is_fraud": 0
+          },
+          {
+            "transaction_id": 3,
+            "amount": 500.0,
+            "location": "Canada",
+            "card_type": "Visa",
+            "is_fraud": 1
+          },
+          {
+            "transaction_id": 4,
+            "amount": 50.0,
+            "location": "USA",
+            "card_type": "Discover",
+            "is_fraud": 0
+          },
+          {
+            "transaction_id": 5,
+            "amount": 1000.0,
+            "location": "Mexico",
+            "card_type": "Visa",
+            "is_fraud": 1
+          },
+          {
+            "transaction_id": 6,
+            "amount": 300.0,
+            "location": "USA",
+            "card_type": "Mastercard",
+            "is_fraud": 0
+          },
+          {
+            "transaction_id": 7,
+            "amount": 2000.0,
+            "location": "USA",
+            "card_type": "Visa",
+            "is_fraud": 1
+          }
+        ],
+        "predicted_fraudulent_transactions": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "model_name": "Régression linéaire",
+      "problem_name": "Prédiction de prix immobiliers",
+      "problem_description": "Prédiction des prix immobiliers en fonction de la surface, du nombre de chambres et de la localisation.",
+      "hyperparameters": {
+        "fit_intercept": true,
+        "normalize": false
+      },
+      "data": {
+        "original_data": [
+          {
+            "surface": 100,
+            "bedrooms": 3,
+            "location": "Paris",
+            "price": 500000
+          },
+          {
+            "surface": 80,
+            "bedrooms": 2,
+            "location": "Lyon",
+            "price": 350000
+          },
+          {
+            "surface": 150,
+            "bedrooms": 4,
+            "location": "Marseille",
+            "price": 600000
+          },
+          {
+            "surface": 70,
+            "bedrooms": 1,
+            "location": "Toulouse",
+            "price": 250000
+          },
+          {
+            "surface": 120,
+            "bedrooms": 3,
+            "location": "Bordeaux",
+            "price": 450000
+          },
+          {
+            "surface": 200,
+            "bedrooms": 5,
+            "location": "Lille",
+            "price": 800000
+          }
+        ],
+        "predicted_prices": [
+          530000,
+          330000,
+          620000,
+          240000,
+          490000,
+          830000
+        ]
+      }
+    }
+  ]
+}

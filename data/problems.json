@@ -1,0 +1,76 @@
+// Noeud non existant
+{
+    "Hierarchical clustering": [
+        {
+            "Probleme": "Taxonomie",
+            "Description": "La taxonomie consiste à regrouper des organismes vivants similaires en groupes hiérarchiques. L'objectif est de mieux comprendre la classification des espèces."
+        },
+        {
+            "Probleme": "Analyse de l'ADN",
+            "Description": "L'analyse de l'ADN consiste à regrouper des séquences d'ADN similaires en groupes hiérarchiques. L'objectif est de mieux comprendre la structure et la fonction de l'ADN."
+        },
+        {
+            "Probleme": "Analyse de réseaux sociaux",
+            "Description": "L'analyse de réseaux sociaux consiste à regrouper des utilisateurs similaires en groupes hiérarchiques en fonction de leurs préférences et de leurs comportements en ligne. L'objectif est de mieux comprendre les réseaux sociaux et les communautés en ligne."
+        }
+    ],
+    "PCA": [
+        {
+            "Probleme": "Réduction de la dimensionnalité",
+            "Description": "La réduction de la dimensionnalité consiste à réduire la complexité d'un ensemble de données en réduisant le nombre de variables ou de dimensions. L'objectif est de faciliter l'analyse et la visualisation des données."
+        },
+        {
+            "Probleme": "Compression d'images",
+            "Description": "La compression d'images consiste à réduire la taille d'une image tout en préservant sa qualité visuelle. L'objectif est de faciliter le stockage et le partage d'images sur Internet."
+        },
+        {
+            "Probleme": "Identification de motifs",
+            "Description": "L'identification de motifs consiste à identifier des schémas récurrents dans un ensemble de données, tels que des tendances, des cycles ou des anomalies. L'objectif est de mieux comprendre les données et de détecter les changements."
+        }
+    ]
+}
+ // Noeud existant
+{
+    "K-Means": [
+        {
+            "Probleme": "Segmentation de marché",
+            "Description": "La segmentation de marché consiste à diviser les consommateurs en groupes homogènes en fonction de leurs caractéristiques communes. L'objectif est d'adapter les stratégies marketing à chaque groupe spécifique."
+        },
+        {
+            "Probleme": "Détection de fraude",
+            "Description": "La détection de fraude consiste à identifier les transactions frauduleuses en les regroupant dans un cluster distinct des transactions légitimes. L'objectif est d'améliorer la sécurité financière."
+        },
+        {
+            "Probleme": "Classification d'images",
+            "Description": "La classification d'images consiste à regrouper des images similaires dans des clusters. L'objectif est de faciliter l'indexation et la recherche d'images."
+        }
+    ],
+    "t-SNE": [
+        {
+            "Probleme": "Visualisation de données",
+            "Description": "La visualisation de données consiste à représenter graphiquement un ensemble de données multidimensionnelles en utilisant une technique de réduction de dimensionnalité. t-SNE est souvent utilisé pour visualiser des données de haute dimensionnalité en deux ou trois dimensions, ce qui facilite l'analyse et la compréhension des données."
+        },
+        {
+            "Probleme": "Classification de texte",
+            "Description": "La classification de texte consiste à regrouper des documents similaires en fonction de leur contenu. t-SNE peut être utilisé pour représenter graphiquement les caractéristiques des documents et identifier les groupes de documents similaires."
+        },
+        {
+            "Probleme": "Analyse d'images",
+            "Description": "L'analyse d'images consiste à identifier des caractéristiques visuelles similaires dans un ensemble d'images. t-SNE peut être utilisé pour représenter graphiquement les caractéristiques des images et identifier les groupes d'images similaires."
+        }
+    ],
+    "DBSCAN": [
+        {
+            "Probleme": "Détection d'anomalies",
+            "Description": "La détection d'anomalies consiste à identifier les points de données qui sont éloignés des autres points de données ou qui ont un comportement différent. DBSCAN peut être utilisé pour identifier les points de données aberrants dans un ensemble de données."
+        },
+        {
+            "Probleme": "Segmentation d'image",
+            "Description": "La segmentation d'image consiste à diviser une image en régions homogènes en fonction de ses caractéristiques visuelles. DBSCAN peut être utilisé pour identifier les régions similaires dans une image."
+        },
+        {
+            "Probleme": "Détection de groupes",
+            "Description": "La détection de groupes consiste à identifier les groupes similaires dans un ensemble de données. DBSCAN peut être utilisé pour identifier les groupes de données qui sont proches les uns des autres en termes de caractéristiques similaires."
+        }
+    ]
+}

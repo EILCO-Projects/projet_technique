@@ -1,0 +1,210 @@
+{
+    "Régression linéaire": [
+        {
+            "probleme": "Prédiction des prix de l'immobilier",
+            "description": "Prédire le prix de vente d'une propriété immobilière en fonction de variables telles que la taille de la propriété, l'emplacement, le nombre de chambres et salles de bain, etc."
+        },
+        {
+            "probleme": "Prédiction des ventes d'un produit",
+            "description": "Prédire le nombre de ventes d'un produit en fonction de variables telles que le prix, la promotion, la saisonnalité, etc."
+        },
+        {
+            "probleme": "Prédiction des revenus annuels d'une entreprise",
+            "description": "Prédire le revenu annuel d'une entreprise en fonction de variables telles que les coûts d'exploitation, les dépenses, les investissements, etc."
+        },
+        {
+            "probleme": "Prédiction du temps nécessaire pour terminer un projet",
+            "description": "Prédire le temps nécessaire pour terminer un projet en fonction de variables telles que la taille du projet, le nombre de membres de l'équipe, les ressources disponibles, etc."
+        },
+        {
+            "probleme": "Prédiction de la consommation d'énergie",
+            "description": "Prédire la consommation d'énergie d'un bâtiment ou d'un système en fonction de variables telles que la température, la saison, le type de bâtiment, etc."
+        }
+    ],
+    "Régression logistique": [
+        {
+            "probleme": "Classification des courriels en spam ou non spam",
+            "description": "Classer les courriels en spam ou non spam en fonction du contenu, des informations de l'expéditeur, etc."
+        },
+        {
+            "probleme": "Prédiction de la probabilité de défaut de paiement d'un client",
+            "description": "Prédire la probabilité de défaut de paiement d'un client en fonction de variables telles que l'historique de crédit, la situation financière actuelle, etc."
+        },
+        {
+            "probleme": "Détection des fraudes dans les transactions financières",
+            "description": "Détecter les transactions frauduleuses en fonction de variables telles que le montant de la transaction, le pays d'origine, le comportement de l'utilisateur, etc."
+        },
+        {
+            "probleme": "Classification de la gravité d'une maladie",
+            "description": "Classer la gravité d'une maladie en fonction des symptômes, des antécédents médicaux, etc."
+        },
+        {
+            "probleme": "Prédiction de la probabilité de succès d'un produit",
+            "description": "Prédire la probabilité de succès d'un produit en fonction de variables telles que la qualité, le prix, la marque, etc."
+        }
+    ],
+    "Arbres de décision": [
+        {
+            "probleme": "Classification des patients selon leur état de santé",
+            "description": "Classer les patients en fonction de leur état de santé en fonction des symptômes, des antécédents médicaux, etc."
+        },
+        {
+            "probleme": "Classification des patients selon leur état de santé",
+            "description": "Classification de patients selon leur état de santé à partir de variables telles que l'âge, les antécédents médicaux, les symptômes, les résultats d'examens, etc."
+        },
+        {
+            "probleme": "Prédiction du risque d'un accident de la route",
+            "description": "Prédiction du risque d'un accident de la route pour des conducteurs donnés en fonction de variables telles que la vitesse, les conditions météorologiques, l'état de la route, etc."
+        },
+        {
+            "probleme": "Prédiction du temps d'attente dans une file d'attente",
+            "description": "Prédiction du temps d'attente dans une file d'attente pour un service donné en fonction de variables telles que le nombre de personnes en attente, le temps moyen de traitement, etc."
+        },
+        {
+            "probleme": "Sélection de la méthode de traitement d'une maladie",
+            "description": "Sélection de la méthode de traitement la plus appropriée pour une maladie donnée en fonction des caractéristiques du patient et des avantages / inconvénients des différentes options de traitement."
+        },
+        {
+            "probleme": "Identification des clients qui ont besoin d'un service supplémentaire",
+            "description": "Identification des clients qui ont besoin d'un service supplémentaire ou d'une intervention en fonction de leur comportement d'achat, de leur historique de service client, etc."
+        }
+    ],
+    "Forêts aléatoires": [
+        {
+            "probleme": "Prédiction du risque d'une maladie cardiaque chez les patients",
+            "description": "Prédiction du risque de développer une maladie cardiaque chez les patients en fonction de variables telles que l'âge, le sexe, les antécédents médicaux, les niveaux de cholestérol, etc."
+        },
+        {
+            "probleme": "Prédiction de la demande de produits dans les supermarchés",
+            "description": "Prédiction de la demande de produits dans les supermarchés en fonction de variables telles que les ventes passées, les événements saisonniers, les prix des concurrents, etc."
+        },
+        {
+            "probleme": "Classification des images médicales pour diagnostiquer des maladies",
+            "description": "Classification d'images médicales telles que les radiographies, les IRM, etc. pour diagnostiquer des maladies telles que le cancer, les fractures, les maladies cardiaques, etc."
+        },
+        {
+            "probleme": "Prédiction des résultats sportifs",
+            "description": "Prédiction des résultats sportifs en fonction des caractéristiques des équipes / athlètes, des performances passées, des conditions météorologiques, etc."
+        },
+        {
+            "probleme": "Prédiction du risque de faillite d'une entreprise",
+            "description": "Prédiction du risque de faillite d'une entreprise en fonction de variables telles que les bénéfices, les dettes, les ratios financiers, etc."
+        }
+    ],
+    "Réseaux de neurones": [
+        {
+            "probleme": "Détection des fraudes dans les transactions bancaires",
+            "description": "Utilisation d'un réseau de neurones pour détecter les transactions frauduleuses dans les données bancaires."
+        },
+        {
+            "probleme": "Prédiction de la probabilité de chômage d'un individu",
+            "description": "Utilisation d'un réseau de neurones pour prédire la probabilité de chômage d'un individu en fonction de certaines caractéristiques."
+        },
+        {
+            "probleme": "Prédiction de la probabilité de succès d'un traitement médical",
+            "description": "Utilisation d'un réseau de neurones pour prédire la probabilité de succès d'un traitement médical pour un patient en fonction de ses caractéristiques."
+        },
+        {
+            "probleme": "Prédiction des scores d'évaluation de la qualité des vins",
+            "description": "Utilisation d'un réseau de neurones pour prédire les scores d'évaluation de la qualité des vins en fonction de certaines caractéristiques."
+        },
+        {
+            "probleme": "Prédiction de la croissance de l'entreprise",
+            "description": "Utilisation d'un réseau de neurones pour prédire la croissance future de l'entreprise en fonction de certaines caractéristiques."
+        }
+    ],
+    "SVM (Support Vector Machines)": [
+        {
+            "probleme": "Classification des images pour la reconnaissance de caractères",
+            "description": "Utilisation de SVM pour classer des images de caractères afin de les reconnaître."
+        },
+        {
+            "probleme": "Classification des notes de crédit pour les prêts bancaires",
+            "description": "Utilisation de SVM pour classer les notes de crédit des emprunteurs et évaluer le risque de défaut de paiement."
+        },
+        {
+            "probleme": "Prédiction de la propagation des maladies infectieuses",
+            "description": "Utilisation de SVM pour prédire la propagation des maladies infectieuses en fonction de données épidémiologiques."
+        },
+        {
+            "probleme": "Prédiction du taux de criminalité dans une région",
+            "description": "Utilisation de SVM pour prédire le taux de criminalité dans une région en fonction de certaines caractéristiques."
+        },
+        {
+            "probleme": "Classification des messages de commentaires en positif ou négatif",
+            "description": "Utilisation de SVM pour classifier les messages de commentaires en positif ou négatif, par exemple pour l'analyse de sentiment."
+        }
+    ],
+    "Naive Bayes": [
+        {
+            "probleme": "Classification des commentaires de produits en positif ou négatif",
+            "description": "Utilisation de Naive Bayes pour classifier les commentaires de produits en positif ou négatif, par exemple pour l'analyse de sentiment."
+        },
+        {
+            "probleme": "Classification des spams dans les courriers électroniques",
+            "description": "Utilisation de Naive Bayes pour classifier les courriers électroniques en spam ou non spam."
+        },
+        {
+            "probleme": "Prédiction de la probabilité de fraude dans les demandes de prêt",
+            "description": "Ce probleme consiste à prédire la probabilité qu'une demande de prêt soit frauduleuse en se basant sur les informations fournies par le demandeur."
+        },
+        {
+            "probleme": "Prédiction de la probabilité de cancer du sein chez les patients",
+            "description": "Ce probleme consiste à prédire la probabilité qu'un patient soit atteint d'un cancer du sein en se basant sur des caractéristiques telles que son âge, son historique médical et les résultats de tests médicaux."
+        },
+        {
+            "probleme": "Classification de la langue dans les systèmes de traduction",
+            "description": "Ce probleme consiste à déterminer la langue d'un texte donné dans le cadre de systèmes de traduction automatique."
+        }
+    ],
+    "Boosting": [
+        {
+            "probleme": "Prédiction du prix des actions de la bourse",
+            "description": "Ce probleme consiste à prédire le prix futur des actions d'une entreprise cotée en bourse en se basant sur les informations historiques et actuelles de l'entreprise et du marché."
+        },
+        {
+            "probleme": "Prédiction de la demande de produits sur un site d'e-commerce",
+            "description": "Ce probleme consiste à prédire la demande future de produits sur un site d'e-commerce en se basant sur les données d'achat passées, les tendances du marché et d'autres variables pertinentes."
+        },
+        {
+            "probleme": "Prédiction de la satisfaction des clients d'un hôtel",
+            "description": "Ce probleme consiste à prédire le niveau de satisfaction futur des clients d'un hôtel en se basant sur les données historiques et les commentaires laissés par les clients."
+        },
+        {
+            "probleme": "Classification des images médicales pour le diagnostic de maladies",
+            "description": "Ce probleme consiste à classifier les images médicales pour aider les médecins à diagnostiquer les maladies et à déterminer les traitements appropriés."
+        },
+        {
+            "probleme": "Prédiction des performances des athlètes",
+            "description": "Ce probleme consiste à prédire les performances futures des athlètes en se basant sur leur historique, leur état de forme actuel et d'autres variables pertinentes."
+        }
+    ],
+    "Bagging": [
+        {
+            "probleme": "Prédiction des élections politiques",
+            "description": "Ce probleme consiste à prédire les résultats d'une élection politique en se basant sur les sondages, les données démographiques et d'autres variables pertinentes."
+        },
+        {
+            "probleme": "Prédiction du nombre de ventes pour une entreprise",
+            "description": "Ce probleme consiste à prédire le nombre de ventes futur d'une entreprise en se basant sur les ventes passées, les tendances du marché et d'autres variables pertinentes."
+        },
+        {
+            "probleme": "Classification des animaux dans les images",
+            "description": "Prédire l'espèce animale dans une image donnée, par exemple pour la reconnaissance de la faune sauvage"
+        },
+        {
+            "probleme": "Prédiction de la quantité de pétrole extraite d'un puits",
+            "description": "Estimer la quantité de pétrole récupérable à partir de données de forage et de production, afin d'optimiser l'extraction"
+        },
+        {
+            "probleme": "Prédiction de la valeur de l'immobilier",
+            "description": "Estimer la valeur d'une propriété immobilière en utilisant des caractéristiques telles que l'emplacement, la taille, l'âge et les caractéristiques du marché immobilier local"
+        }
+    ],
+    "KNN (K-Nearest Neighbors)": [
+        {
+            "probleme": "Prédiction du prix des billets",
+            "description": "Prédire le prix des billets pour les événements sportifs, les concerts, les voyages aériens et d'autres activités en utilisant les prix historiques et les caractéristiques de l'événement"
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "Modeles d'apprentissage supervise": [
+        {
+            "name": "KNN (K-Nearest Neighbors)",
+            "algorithm": "KNeighborsClassifier",
+            "hyperparameters": {
+                "n_neighbors": 5,
+                "weights": "uniform",
+                "algorithm": "auto",
+                "leaf_size": 30
+            }
+        },
+        {
+            "name": "SVM (Support Vector Machines)",
+            "algorithm": "SVC",
+            "hyperparameters": {
+                "C": 1.0,
+                "kernel": "rbf",
+                "degree": 3,
+                "gamma": "scale",
+                "shrinking": true
+            }
+        },
+        {
+            "name": "Réseaux de neurones",
+            "algorithm": "MLPClassifier",
+            "hyperparameters": {
+                "hidden_layer_sizes": "(100, 50)",
+                "activation": "relu",
+                "solver": "adam",
+                "alpha": 0.0001,
+                "batch_size": "auto"
+            }
+        },
+        {
+            "name": "Forêts aléatoires",
+            "algorithm": "RandomForestClassifier",
+            "hyperparameters": {
+                "n_estimators": 100,
+                "criterion": "gini",
+                "max_depth": 10,
+                "min_samples_split": 2,
+                "min_samples_leaf": 1
+            }
+        },
+        {
+            "name": "Arbres de décision",
+            "algorithm": "DecisionTreeClassifier",
+            "hyperparameters": {
+                "criterion": "gini",
+                "splitter": "best",
+                "max_depth": 5,
+                "min_samples_split": 2,
+                "min_samples_leaf": 1
+            }
+        },
+        {
+            "name": "Régression logistique",
+            "algorithm": "LogisticRegression",
+            "hyperparameters": {
+                "penalty": "l2",
+                "C": 1.0,
+                "fit_intercept": true,
+                "solver": "lbfgs",
+                "max_iter": 1000
+            }
+        },
+        {
+            "name": "Régression linéaire",
+            "algorithm": "LinearRegression",
+            "hyperparameters": {
+                "fit_intercept": true,
+                "normalize": false,
+                "copy_X": true,
+                "n_jobs": -1
+            }
+        }        
+        
+    ]
+}

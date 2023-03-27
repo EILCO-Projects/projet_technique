@@ -1,0 +1,67 @@
+{
+    "Modèles d'apprentissage par renforcement": [
+        {
+            "Nom": "Q-Learning",
+            "Problemes": [
+                {
+                    "Nom": "Contrôle de Processus de Décision de Markov sans modèle",
+                    "Description": "L'agent doit apprendre à maximiser une récompense numérique en choisissant des actions dans un environnement, sans connaître à l'avance les probabilités de transition d'état."
+                }
+            ]
+        },
+        {
+            "Nom": "SARSA",
+            "Problemes": [
+                {
+                    "Nom": "Contrôle de Processus de Décision de Markov sans modèle",
+                    "Description": "L'agent doit apprendre à maximiser une récompense numérique en choisissant des actions dans un environnement, tout en utilisant une politique de prise de décision basée sur la valeur."
+                }
+            ]
+        },
+        {
+            "Nom": "DQN",
+            "Problemes": [
+                {
+                    "Nom": "Contrôle de Processus de Décision de Markov avec grand espace d'état et d'action",
+                    "Description": "L'agent doit apprendre à maximiser une récompense numérique en choisissant des actions dans un environnement, en utilisant un réseau de neurones pour approximer la fonction d'action-valeur Q."
+                }
+            ]
+        },
+        {
+            "Nom": "Policy Gradients",
+            "Problemes": [
+                {
+                    "Nom": "Contrôle de Processus de Décision de Markov",
+                    "Description": "L'agent doit apprendre directement une politique de prise de décision basée sur la récompense, en utilisant une méthode de gradient pour optimiser les paramètres du modèle."
+                }
+            ]
+        },
+        {
+            "Nom": "Actor-Critic",
+            "Problemes": [
+                {
+                    "Nom": "Contrôle de Processus de Décision de Markov",
+                    "Description": "L'agent doit apprendre à maximiser une récompense numérique en choisissant des actions dans un environnement, en utilisant à la fois un réseau de neurones pour approximer la politique de prise de décision et la fonction d'action-valeur Q."
+                }
+            ]
+        },
+        {
+            "Nom": "PPO",
+            "Problemes": [
+                {
+                    "Nom": "Contrôle de Processus de Décision de Markov",
+                    "Description": "L'agent doit apprendre à maximiser une récompense numérique en choisissant des actions dans un environnement, en utilisant une méthode de gradient qui prend en compte les différences entre les politiques mises à jour et précédentes."
+                }
+            ]
+        },
+        {
+            "Nom": "TRPO",
+            "Problemes": [
+                {
+                    "Nom": "Contrôle de Processus de Décision de Markov",
+                    "Description": "L'agent doit apprendre à maximiser une récompense numérique en choisissant des actions dans un environnement, en utilisant une méthode de gradient qui maximise la récompense sous des contraintes de distance de Kullback-Leibler (KL)."
+                }
+            ]
+        }
+    ]
+}

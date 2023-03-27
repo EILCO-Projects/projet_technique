@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "model_name": "k-means",
+      "model_name": "K-Means",
       "problem_name": "Segmentation des clients",
       "problem_description": "Segmentation des clients d'un magasin de détail en fonction de leurs habitudes d'achat.",
       "hyperparameters": {
@@ -306,7 +306,7 @@
       }
     },
     {
-      "model_name": "Hierarchical Clustering",
+      "model_name": "Hierarchical clustering",
       "problem_name": "Segmentation de clients",
       "problem_description": "Segmentation de clients en fonction de leurs comportements d'achat.",
       "hyperparameters": {
@@ -365,7 +365,7 @@
       }
     },
     {
-      "model_name": "K-Nearest Neighbors",
+      "model_name": "KNN (K-Nearest Neighbors)",
       "problem_name": "Classification de types d'iris",
       "problem_description": "Classification de types d'iris en fonction de leurs caractéristiques.",
       "hyperparameters": {

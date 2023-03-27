@@ -1,0 +1,934 @@
+{
+    "data": [
+        {
+            "model_name": "Q-Learning",
+            "problem_name": "Apprentissage du contrôle des feux de signalisation",
+            "problem_description": "Apprentissage du contrôle des feux de signalisation pour minimiser la durée d'attente des voitures dans une intersection.",
+            "hyperparameters": {
+                "num_episodes": 10000,
+                "max_steps_per_episode": 100,
+                "learning_rate": 0.8,
+                "discount_factor": 0.95,
+                "exploration_rate": 0.1,
+                "exploration_decay_rate": 0.001
+            },
+            "data": {
+                "state_space": [
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "action_space": [
+                    0,
+                    1,
+                    2
+                ],
+                "reward_table": [
+                    [
+                        -1,
+                        -1,
+                        -1,
+                        -1,
+                        0,
+                        -1
+                    ],
+                    [
+                        -1,
+                        -1,
+                        -1,
+                        0,
+                        -1,
+                        100
+                    ],
+                    [
+                        -1,
+                        -1,
+                        -1,
+                        0,
+                        -1,
+                        -1
+                    ],
+                    [
+                        -1,
+                        0,
+                        0,
+                        -1,
+                        0,
+                        -1
+                    ],
+                    [
+                        0,
+                        -1,
+                        -1,
+                        0,
+                        -1,
+                        100
+                    ],
+                    [
+                        -1,
+                        0,
+                        -1,
+                        -1,
+                        0,
+                        100
+                    ]
+                ]
+            }
+        },
+        {
+            "model_name": "SARSA",
+            "problem_name": "Apprentissage du labyrinthe",
+            "problem_description": "Apprentissage de la résolution d'un labyrinthe en utilisant l'algorithme SARSA.",
+            "hyperparameters": {
+                "num_episodes": 10000,
+                "max_steps_per_episode": 100,
+                "learning_rate": 0.1,
+                "discount_factor": 0.95,
+                "exploration_rate": 0.1,
+                "exploration_decay_rate": 0.001
+            },
+            "data": {
+                "state_space": [
+                    [
+                        "S",
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        0,
+                        1
+                    ],
+                    [
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        "G"
+                    ]
+                ],
+                "action_space": [
+                    "up",
+                    "down",
+                    "left",
+                    "right"
+                ],
+                "reward_table": [
+                    [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        10,
+                        0,
+                        -10
+                    ],
+                    [
+                        0,
+                        10,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        100
+                    ]
+                ]
+            }
+        },
+        {
+            "model_name": "DQN",
+            "problem_name": "Contrôle de processus industriel",
+            "problem_description": "Optimisation de la production d'un processus industriel en utilisant l'algorithme DQN pour contrôler les variables de processus.",
+            "hyperparameters": {
+                "state_size": 20,
+                "action_size": 4,
+                "batch_size": 32,
+                "epochs": 50,
+                "learning_rate": 0.001,
+                "gamma": 0.99,
+                "epsilon_start": 1.0,
+                "epsilon_decay": 0.999,
+                "epsilon_min": 0.01,
+                "memory_size": 10000
+            },
+            "data": {
+                "original_data": "chemin/vers/les/données/de/processus/",
+                "optimized_variables": [
+                    0.5,
+                    0.3,
+                    0.7,
+                    0.2,
+                    0.9,
+                    0.6,
+                    0.1,
+                    0.4,
+                    0.8,
+                    0.2,
+                    0.6,
+                    0.9,
+                    0.3,
+                    0.7,
+                    0.1,
+                    0.8,
+                    0.5,
+                    0.2,
+                    0.9,
+                    0.4
+                ]
+            }
+        },
+        {
+            "model_name": "Double Q-Learning",
+            "problem_name": "Contrôle de trafic aérien",
+            "problem_description": "Optimisation de la trajectoire des avions pour éviter les collisions en utilisant l'algorithme Double Q-Learning.",
+            "hyperparameters": {
+                "discount_factor": 0.99,
+                "learning_rate": 0.001,
+                "epsilon": 0.1,
+                "batch_size": 32,
+                "num_episodes": 1000,
+                "max_steps_per_episode": 100,
+                "target_update_frequency": 100
+            },
+            "data": {
+                "aircraft_positions": [
+                    {
+                        "x": 100,
+                        "y": 200,
+                        "altitude": 3000
+                    },
+                    {
+                        "x": 500,
+                        "y": 700,
+                        "altitude": 4000
+                    },
+                    {
+                        "x": 300,
+                        "y": 400,
+                        "altitude": 5000
+                    }
+                ],
+                "collision_matrix": [
+                    [
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        1,
+                        0,
+                        1
+                    ],
+                    [
+                        0,
+                        1,
+                        0
+                    ]
+                ],
+                "num_actions": 9
+            }
+        },
+        {
+            "model_name": "Prioritized Experience Replay",
+            "problem_name": "Prédiction de consommation d'énergie",
+            "problem_description": "Prédiction de la consommation d'énergie à partir de données de capteurs en utilisant la méthode de Prioritized Experience Replay pour améliorer la performance de l'algorithme.",
+            "hyperparameters": {
+                "state_size": 10,
+                "action_size": 1,
+                "batch_size": 32,
+                "epochs": 100,
+                "learning_rate": 0.001,
+                "gamma": 0.99,
+                "epsilon_start": 1.0,
+                "epsilon_decay": 0.999,
+                "epsilon_min": 0.01,
+                "memory_size": 10000,
+                "alpha": 0.6,
+                "beta": 0.4,
+                "beta_increment_per_sampling": 0.001,
+                "prioritization_type": "proportional"
+            },
+            "data": {
+                "original_data": "chemin/vers/les/données/de/capteurs/",
+                "energy_consumption_predictions": [
+                    50,
+                    55,
+                    60,
+                    58,
+                    62,
+                    63,
+                    65,
+                    68,
+                    70,
+                    72,
+                    75,
+                    78,
+                    80,
+                    82,
+                    85,
+                    88,
+                    90,
+                    92,
+                    95,
+                    98
+                ]
+            }
+        },
+        {
+            "model_name": "Policy Gradients",
+            "problem_name": "Contrôle d'un bras robotique",
+            "problem_description": "Apprentissage de la politique optimale pour contrôler un bras robotique afin qu'il atteigne une position cible.",
+            "hyperparameters": {
+                "input_shape": [
+                    6,
+                    1
+                ],
+                "hidden_layers": [
+                    32,
+                    16
+                ],
+                "output_shape": [
+                    3,
+                    1
+                ],
+                "batch_size": 64,
+                "epochs": 100,
+                "learning_rate": 0.001,
+                "discount_factor": 0.99
+            },
+            "data": {
+                "original_data": [
+                    {
+                        "joint_angles": [
+                            0.5,
+                            -0.3,
+                            0.2,
+                            0.7,
+                            -0.5,
+                            0.1
+                        ],
+                        "target_position": [
+                            0.2,
+                            -0.5,
+                            0.8
+                        ]
+                    },
+                    {
+                        "joint_angles": [
+                            -0.1,
+                            0.8,
+                            0.3,
+                            -0.5,
+                            0.2,
+                            0.6
+                        ],
+                        "target_position": [
+                            -0.4,
+                            0.3,
+                            0.1
+                        ]
+                    },
+                    {
+                        "joint_angles": [
+                            0.7,
+                            0.2,
+                            -0.4,
+                            0.9,
+                            -0.1,
+                            0.5
+                        ],
+                        "target_position": [
+                            -0.2,
+                            -0.7,
+                            0.6
+                        ]
+                    },
+                    {
+                        "joint_angles": [
+                            -0.3,
+                            0.6,
+                            0.1,
+                            0.2,
+                            0.8,
+                            -0.5
+                        ],
+                        "target_position": [
+                            0.3,
+                            0.1,
+                            -0.4
+                        ]
+                    },
+                    {
+                        "joint_angles": [
+                            0.1,
+                            -0.5,
+                            0.4,
+                            -0.6,
+                            0.3,
+                            0.9
+                        ],
+                        "target_position": [
+                            -0.1,
+                            -0.4,
+                            -0.8
+                        ]
+                    }
+                ],
+                "trained_model": "/path/to/trained_model.h5"
+            }
+        },
+        {
+            "model_name": "TRPO",
+            "problem_name": "Contrôle de robot",
+            "problem_description": "Contrôle d'un bras robotique pour atteindre des positions cibles.",
+            "hyperparameters": {
+                "input_shape": [
+                    10,
+                    10,
+                    3
+                ],
+                "hidden_layers": [
+                    32,
+                    64,
+                    32
+                ],
+                "num_actions": 4,
+                "batch_size": 128,
+                "epochs": 100,
+                "learning_rate": 0.001,
+                "gamma": 0.99,
+                "lambda": 0.95,
+                "max_kl_divergence": 0.01,
+                "cg_iterations": 10,
+                "cg_residual_tol": 1e-10,
+                "line_search_steps": 10,
+                "backtrack_coeff": 0.8,
+                "max_backtracks": 15,
+                "entropy_coef": 0.01,
+                "value_coef": 0.5
+            },
+            "data": {
+                "observations": [
+                    [
+                        0.2,
+                        0.1,
+                        0.5,
+                        0.7,
+                        0.9,
+                        0.8,
+                        0.3,
+                        0.6,
+                        0.4,
+                        0.2
+                    ],
+                    [
+                        0.5,
+                        0.6,
+                        0.7,
+                        0.4,
+                        0.3,
+                        0.2,
+                        0.1,
+                        0.8,
+                        0.9,
+                        0.3
+                    ],
+                    [
+                        0.8,
+                        0.9,
+                        0.1,
+                        0.2,
+                        0.3,
+                        0.4,
+                        0.5,
+                        0.6,
+                        0.7,
+                        0.9
+                    ],
+                    [
+                        0.3,
+                        0.1,
+                        0.6,
+                        0.7,
+                        0.8,
+                        0.9,
+                        0.2,
+                        0.5,
+                        0.4,
+                        0.3
+                    ],
+                    [
+                        0.6,
+                        0.4,
+                        0.9,
+                        0.8,
+                        0.7,
+                        0.1,
+                        0.2,
+                        0.3,
+                        0.5,
+                        0.2
+                    ]
+                ],
+                "actions": [
+                    1,
+                    3,
+                    0,
+                    2,
+                    1
+                ],
+                "rewards": [
+                    0.5,
+                    0.2,
+                    0.1,
+                    0.4,
+                    0.3
+                ],
+                "values": [
+                    0.2,
+                    0.1,
+                    0.3,
+                    0.2,
+                    0.1
+                ],
+                "advantages": [
+                    0.3,
+                    -0.1,
+                    -0.2,
+                    0.2,
+                    0.2
+                ],
+                "log_probs": [
+                    -1.2,
+                    -1.5,
+                    -0.8,
+                    -1.1,
+                    -1.3
+                ],
+                "old_log_probs": [
+                    -1.3,
+                    -1.6,
+                    -0.9,
+                    -1.2,
+                    -1.4
+                ]
+            }
+        },
+        {
+            "model_name": "PPO",
+            "problem_name": "Contrôle de moteurs",
+            "problem_description": "Apprentissage de politiques pour contrôler des moteurs à partir d'observations de capteurs.",
+            "hyperparameters": {
+                "input_shape": [
+                    10
+                ],
+                "output_shape": [
+                    5
+                ],
+                "batch_size": 128,
+                "epochs": 100,
+                "learning_rate": 0.001,
+                "gamma": 0.99,
+                "epsilon": 0.2,
+                "clip_value": 0.2
+            },
+            "data": {
+                "observation_data": [
+                    {
+                        "sensor_values": [
+                            0.1,
+                            0.5,
+                            0.7,
+                            0.3,
+                            0.2,
+                            0.4,
+                            0.6,
+                            0.8,
+                            0.9,
+                            0.1
+                        ]
+                    },
+                    {
+                        "sensor_values": [
+                            0.2,
+                            0.6,
+                            0.8,
+                            0.2,
+                            0.1,
+                            0.3,
+                            0.5,
+                            0.7,
+                            0.8,
+                            0.2
+                        ]
+                    },
+                    {
+                        "sensor_values": [
+                            0.3,
+                            0.7,
+                            0.9,
+                            0.1,
+                            0.2,
+                            0.4,
+                            0.6,
+                            0.8,
+                            0.7,
+                            0.3
+                        ]
+                    },
+                    {
+                        "sensor_values": [
+                            0.4,
+                            0.8,
+                            0.6,
+                            0.4,
+                            0.3,
+                            0.5,
+                            0.7,
+                            0.9,
+                            0.6,
+                            0.4
+                        ]
+                    },
+                    {
+                        "sensor_values": [
+                            0.5,
+                            0.9,
+                            0.4,
+                            0.5,
+                            0.4,
+                            0.6,
+                            0.8,
+                            0.9,
+                            0.5,
+                            0.5
+                        ]
+                    }
+                ],
+                "action_data": [
+                    {
+                        "action": [
+                            0.1,
+                            0.2,
+                            0.3,
+                            0.4,
+                            0.5
+                        ]
+                    },
+                    {
+                        "action": [
+                            0.2,
+                            0.3,
+                            0.4,
+                            0.5,
+                            0.6
+                        ]
+                    },
+                    {
+                        "action": [
+                            0.3,
+                            0.4,
+                            0.5,
+                            0.6,
+                            0.7
+                        ]
+                    },
+                    {
+                        "action": [
+                            0.4,
+                            0.5,
+                            0.6,
+                            0.7,
+                            0.8
+                        ]
+                    },
+                    {
+                        "action": [
+                            0.5,
+                            0.6,
+                            0.7,
+                            0.8,
+                            0.9
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "model_name": "DDPG",
+            "problem_name": "Contrôle de la température d'un réacteur chimique",
+            "problem_description": "Contrôle de la température d'un réacteur chimique en utilisant l'algorithme DDPG.",
+            "hyperparameters": {
+                "buffer_size": 10000,
+                "batch_size": 128,
+                "gamma": 0.99,
+                "tau": 0.001,
+                "actor_lr": 0.0001,
+                "critic_lr": 0.001
+            },
+            "data": {
+                "input_data": [
+                    {
+                        "time": 0,
+                        "temperature": 50,
+                        "flow_rate": 10
+                    },
+                    {
+                        "time": 1,
+                        "temperature": 55,
+                        "flow_rate": 11
+                    },
+                    {
+                        "time": 2,
+                        "temperature": 60,
+                        "flow_rate": 12
+                    },
+                    {
+                        "time": 3,
+                        "temperature": 65,
+                        "flow_rate": 13
+                    },
+                    {
+                        "time": 4,
+                        "temperature": 70,
+                        "flow_rate": 14
+                    },
+                    {
+                        "time": 5,
+                        "temperature": 75,
+                        "flow_rate": 15
+                    }
+                ],
+                "target_data": [
+                    {
+                        "time": 0,
+                        "temperature": 55
+                    },
+                    {
+                        "time": 1,
+                        "temperature": 60
+                    },
+                    {
+                        "time": 2,
+                        "temperature": 65
+                    },
+                    {
+                        "time": 3,
+                        "temperature": 70
+                    },
+                    {
+                        "time": 4,
+                        "temperature": 75
+                    },
+                    {
+                        "time": 5,
+                        "temperature": 80
+                    }
+                ]
+            }
+        },
+        {
+            "model_name": "SAC",
+            "problem_name": "Contrôle de robots",
+            "problem_description": "Contrôler les mouvements d'un bras robotique pour atteindre une cible spécifique.",
+            "hyperparameters": {
+                "buffer_size": 1000000,
+                "batch_size": 128,
+                "learning_rate": 0.0003,
+                "gamma": 0.99,
+                "tau": 0.005,
+                "alpha": 0.2,
+                "hidden_layer_sizes": [
+                    256,
+                    256
+                ],
+                "target_entropy": -2
+            },
+            "data": {
+                "training_data": "/path/to/training/data",
+                "testing_data": "/path/to/testing/data",
+                "trained_model": "/path/to/trained/model",
+                "evaluation_metrics": {
+                    "mean_squared_error": 0.012,
+                    "success_rate": 0.95
+                }
+            }
+        },
+        {
+            "model_name": "A2C",
+            "problem_name": "Contrôle de la locomotion d'un robot",
+            "problem_description": "Apprentissage par renforcement pour le contrôle de la locomotion d'un robot.",
+            "hyperparameters": {
+                "gamma": 0.99,
+                "lr_actor": 0.0001,
+                "lr_critic": 0.0005,
+                "n_steps": 5,
+                "batch_size": 32,
+                "entropy_coef": 0.01,
+                "value_loss_coef": 0.5,
+                "max_grad_norm": 0.5,
+                "n_envs": 8,
+                "n_epochs": 100,
+                "n_timesteps": 100000
+            },
+            "data": {
+                "robot_env": {
+                    "env_name": "RobotEnv",
+                    "env_description": "Simulation d'un robot dans un environnement virtuel."
+                },
+                "trained_model": "/path/to/trained/model",
+                "reward_plot": "/path/to/reward/plot.png",
+                "learning_curve": "/path/to/learning/curve.png"
+            }
+        },
+        {
+            "model_name": "A3C",
+            "problem_name": "Contrôle de robot",
+            "problem_description": "Apprentissage du contrôle d'un robot dans un environnement simulé à l'aide de l'algorithme A3C.",
+            "hyperparameters": {
+                "num_workers": 16,
+                "learning_rate": 0.0001,
+                "discount_factor": 0.99,
+                "entropy_factor": 0.01,
+                "max_steps_per_episode": 1000,
+                "max_episodes": 10000
+            },
+            "data": {
+                "training_data": [
+                    {
+                        "state": [
+                            0.1,
+                            0.2,
+                            0.3
+                        ],
+                        "action": 2,
+                        "reward": 0.1
+                    },
+                    {
+                        "state": [
+                            0.2,
+                            0.3,
+                            0.4
+                        ],
+                        "action": 1,
+                        "reward": 0.2
+                    },
+                    {
+                        "state": [
+                            0.3,
+                            0.4,
+                            0.5
+                        ],
+                        "action": 0,
+                        "reward": 0.3
+                    },
+                    {
+                        "state": [
+                            0.4,
+                            0.5,
+                            0.6
+                        ],
+                        "action": 3,
+                        "reward": 0.4
+                    },
+                    {
+                        "state": [
+                            0.5,
+                            0.6,
+                            0.7
+                        ],
+                        "action": 1,
+                        "reward": 0.5
+                    }
+                ],
+                "trained_model": "/path/to/trained/model"
+            }
+        },
+        {
+            "model_name": "ACKTR",
+            "problem_name": "Cartpole-v1",
+            "problem_description": "Résolution du problème de Cartpole-v1 en utilisant l'algorithme ACKTR.",
+            "hyperparameters": {
+                "gamma": 0.99,
+                "learning_rate": 0.0007,
+                "gae_lambda": 0.95,
+                "entropy_coefficient": 0.01,
+                "value_coefficient": 0.5,
+                "max_grad_norm": 0.5,
+                "num_episodes": 2000,
+                "batch_size": 32,
+                "episode_length": 500
+            },
+            "data": {
+                "trained_model": "/path/to/trained_model",
+                "test_results": [
+                    {
+                        "episode_number": 1,
+                        "episode_length": 500,
+                        "reward": 500
+                    },
+                    {
+                        "episode_number": 2,
+                        "episode_length": 500,
+                        "reward": 500
+                    },
+                    {
+                        "episode_number": 3,
+                        "episode_length": 500,
+                        "reward": 500
+                    },
+                    {
+                        "episode_number": 4,
+                        "episode_length": 500,
+                        "reward": 500
+                    }
+                ]
+            }
+        }
+    ]
+}

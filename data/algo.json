@@ -4,7 +4,7 @@
             "Modele": "Clustering",
             "Algorithmes": [
                 {
-                    "Algorithme": "Clustering hiérarchique",
+                    "Algorithme": "Hierarchical clustering",
                     "Hyperparametres": {
                         "linkage": [
                             "ward",

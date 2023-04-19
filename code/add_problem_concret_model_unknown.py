@@ -1,5 +1,6 @@
 from neo4j import GraphDatabase
 import json
+import os
 
 # Connexion à la base de données Neo4j
 uri = "bolt://localhost:7687"
@@ -18,8 +19,15 @@ with driver.session() as session:
             algo = item['model_name']
             name = item['problem_name']
             description = item['problem_description']
-            hyperparametre = json.dumps(item['hyperparameters'])
-            inputs = json.dumps(item['data'])
+            hyperparametre = item['hyperparameters']
+            inputs = item['data']
+
+            with open(f'../inputs_for_problems/unsupervised/{name}.txt', 'w') as f:
+                for k, v in inputs.items():
+                    f.write(f'{k} : {v}\n')
+
+            inputLink = os.path.dirname(
+                os.getcwd()) + f"/inputs_for_problems/unsupervised/{name}.txt"
 
             session.run(
                 """
@@ -28,14 +36,32 @@ with driver.session() as session:
                     MERGE (m)-[:EST_DE_TYPE]->(t)
                     MERGE (a:Algo {name:$algo})
                     MERGE (a)-[:IMPLEMENTE]->(m)
-                    MERGE (p:Probleme {name: $name, description: $description})
+                    MERGE (p:Probleme {name: $name, description: $description,  data_url:$inputs})
                     MERGE (a)-[:RESOUT]->(p)
-                    MERGE (e:ExempleConcret {name: $name, description: $description, hyperparametre: $hyp, inputs:$inputs})
-                    MERGE (e)-[:EST_UN_EXEMPLE_DE]->(p)
                 """,
                 algo=algo,
                 name=name,
                 description=description,
-                hyp=hyperparametre,
-                inputs=inputs
+                inputs=inputLink
             )
+            for k, v in hyperparametre.items():
+                hypName = k
+                if (type(v) == list):
+                    hypValue = ', '.join(v if type(v) == str else str(v))
+                elif (type(v) == str):
+                    hypValue = v
+                elif (type(v) == dict):
+                    hypValue = json.dumps(v)
+                else:
+                    hypValue = str(v)
+
+                session.run(
+                    """
+                        MATCH (p:Probleme{name:$name})
+                        MERGE (h:Hyperparametre {name: $hyp, valeurs: $val})
+                        MERGE (h)-[:EST_UN_HYPERPARAMETRE]->(p)
+                    """,
+                    name=name,
+                    hyp=hypName,
+                    val=hypValue
+                )

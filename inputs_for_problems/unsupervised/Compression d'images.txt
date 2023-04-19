@@ -1,0 +1,2 @@
+original_data : [{'image_path': '/path/to/image1.jpg'}, {'image_path': '/path/to/image2.jpg'}, {'image_path': '/path/to/image3.jpg'}, {'image_path': '/path/to/image4.jpg'}, {'image_path': '/path/to/image5.jpg'}, {'image_path': '/path/to/image6.jpg'}]
+compressed_images : ['/path/to/compressed_image1.jpg', '/path/to/compressed_image2.jpg', '/path/to/compressed_image3.jpg', '/path/to/compressed_image4.jpg', '/path/to/compressed_image5.jpg', '/path/to/compressed_image6.jpg']

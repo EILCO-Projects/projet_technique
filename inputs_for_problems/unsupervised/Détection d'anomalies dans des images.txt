@@ -1,0 +1,3 @@
+original_data : /chemin/vers/le/jeu/de/données/
+predicted_anomaly_labels : [0, 0, 1, 0, 1, 0, 1]
+image_shape : [64, 64, 3]

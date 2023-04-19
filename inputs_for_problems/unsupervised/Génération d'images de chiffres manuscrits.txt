@@ -1,0 +1,2 @@
+original_data : /chemin/vers/le/jeu/de/données/
+image_shape : [28, 28, 1]

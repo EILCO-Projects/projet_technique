@@ -3,9 +3,10 @@ import spacy
 # Traiter les informations renseignées par l'utilisateur et retourner les élements importants
 nlp = spacy.load("fr_core_news_sm")
 
-doc = nlp(input('Entrer votre problème: '))
+# Traitez le texte pour obtenir un objet Doc
+doc = nlp(input("Votre question: "))
 
-# print([chunk.lemma_ for chunk in doc.noun_chunks])
+# Itérez sur les tokens et affichez leur forme lemmatisée
 nouns = [token.lemma_ for token in doc if (token.pos_ == "NOUN")]
 adj = [token.lemma_ for token in doc if (token.pos_ == "ADJ")]
 

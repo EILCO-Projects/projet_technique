@@ -1,0 +1,2 @@
+original_data : /chemin/vers/le/jeu/de/données/
+text_shape : [300]

@@ -1,5 +1,9 @@
 MATCH (n:Probleme)
-WHERE n.name IN ['mot1', 'mot2', 'mot3', ...]
-WITH n, apoc.text.sorensenDiceSimilarity(n.name, 'mot1 mot2 mot3') AS sim
-RETURN n.name, sim
+WITH n, apoc.text.sorensenDiceSimilarity(n.name, 'regression lineaire algorithme optimal') AS sim
+RETURN n.name as name, labels(n)[0] as label, sim
 ORDER BY sim DESC
+
+MATCH (n:Algo{name:"Q-Learning"})-[*..3]-(m) return n,m
+
+MATCH (t:TypeDeModele{name:"Apprentissage Non Supervisé"})-[l1]-(m:Modele{name:"Autoencodeur Variationnel avec flot normalisé (NV-VAE)"})-[l2]-(a:Algo{name:"Autoencodeur Variationnel avec flot normalisé (NV-VAE)"})-[l3]-(p:Probleme{name:"Détection d'anomalies dans des images"})-[l4:EST_UN_HYPERPARAMETRE]-(n)
+return t,l1,m,l2,a,l3,p,l4,n

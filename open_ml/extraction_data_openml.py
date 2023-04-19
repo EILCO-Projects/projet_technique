@@ -11,11 +11,9 @@ dataset = openml.datasets.get_dataset(61)
 run = openml.runs.get_run(81)
 
 flow = openml.flows.get_flow(run.flow_id)
-print(flow.parameters)
+task = openml.tasks.get_task(run.task_id)
 
-
-
-
+print(dataset.original_data_url)
 
 
 # for e in run.parameter_settings:
